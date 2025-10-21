@@ -33,3 +33,16 @@ git log --graph
 
 # main 브랜치 뿐만 아니라 전체 commit 이력 조회
 git log --all
+
+# 특정 commit ID로의 전환(소스코드를 과거의 특정 버전으로 되돌릴때)
+git checkout 커밋ID
+
+# 다시 현재 브랜치의 commit 되돌아올때
+git checkout 현재브랜치명
+
+# git pull 원격의 변경사항을 local로 내려받는 것 (working directory 까지 반영)
+# git pull = git fetch + git merge
+git pull origin 브랜치명
+
+# 원격에 변경사항을 local에 가져오되 병합은 하지 않는 것
+git fetch origin main
